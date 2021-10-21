@@ -1,0 +1,27 @@
+.link {
+    flex:1;
+    align-items: center;
+}
+
+
+.logo {
+    align-items: center;
+}
+
+.nav {
+    background-color: rgb(209, 208, 208);
+    align-items: center;
+    
+}
+
+
+.imgInst {
+    color: rgb(197, 164, 75);
+    text-decoration: none;
+    position: relative;
+    left: 700px;
+
+    
+
+}
+
