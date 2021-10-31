@@ -1,21 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 
-a {
-    font-size: 20px;
-}
 
-div {
+
+.home {
     width: 100%;
+    height: 100vh;
 }
 
-.corpo {
-    margin:2%;
+.home header {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    justify-content: space-between;
+}
+
+.home headerleft {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-start;
+    z-index: 0;
+}
+
+.home headerright {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content:flex-end;
+    z-index: 0;
+}
+
+.logo {
+    position: absolute;
+    height: 20%;
+    left: 50%;
+    top: 2%;
+    margin-left: -4%;
+    border-radius: 100%;
+    pointer-events: "all";
+    z-index: 0;
+    transition: box-shadow 0.5s;
+}
+
+.logo:hover {
+    box-shadow: 0 0 50px 5px #bd7a68;
+    z-index: 0;
+}
+
+.background {
+    height: 120vh;
+    width: 219vh;
+    margin-top: -25%;
+    z-index: 1;
+}
+
+.home header nav {
+    display: flex;
+    flex: 1;
+    margin-left: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link {
+    background: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    font: 500 32px Ubuntu;
+    color: #ee5a31;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: text-shadow 0.5s;
+    }
+
+
+
+.link:hover{
+    color:#e7e7e7d5;
+    text-shadow: 0 0 20px #fff, 0 0 30px #bd7a68, 0 0 40px #bd7a68, 0 0 50px #bd7a68, 0 0 60px #bd7a68, 0 0 70px #bd7a68, 0 0 80px #bd7a68;
+}
+
+.body {
     padding-top: 60px;
 }
 
-.header {
-    background-color: black;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(197, 164, 75));
-    flex-direction: row;
-    justify-content: center;
+.imgInsta {
+    color: #ffe3db;
+    text-decoration: none;
+    margin-left: 50%;
+    align-items: center;
+    display: flex;
 }
+
+.footer {
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-content: end;
+    justify-self: end;
+    justify-items: end;
+    height: 100vh;
+}
+

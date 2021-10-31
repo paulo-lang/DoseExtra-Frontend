@@ -1,58 +1,73 @@
 import React, { useState } from 'react';
-
-import logoImg from '../../assets/Home/logo.svg'
+import { Link } from 'react-router-dom';
+import logoImg from '../../assets/Home/logo5.svg'
+import backImg from '../../assets/Home/backgroundHeaderWide.jpeg'
 import { FiInstagram } from 'react-icons/fi'
-import Header from './Header';
-
-import './styles.css';
+import './styles.css'
 
 
 
 function Home() {
-  const [page, setPage] = useState("Home")
-  return (
-    <div class = "home">
-        <header class='header'>
-            <img class='logo' src={logoImg} alt="Banda Dose Extra" width={100} height={100} />
-            <item class='link' href="#sobre">Sobre</item>
-            <item class='link' href="#contato">Contato</item>
-            <item class='link' href="#insta"><  FiInstagram class="imgInsta" size={20} />Instagram </item>
-        </header>
-      <body class ="corpo">
-        
-        <section id="home"></section>
 
-        <section id="sobre">
-          
-        </section>
 
-        <section id="contato">
-          <div>
 
-            <h3>Nos contrate</h3>
+    return (
+        <div class='home'>
+            
+            <header>
+                <headerleft>
+                    <Link class='link' href="#contato">Mídia</Link>
+                    <Link class='link' href="#contato">Eventos</Link>
+                </headerleft>
 
-            <p>Tel de contato</p>
-            <p><a href="tel:19983399763">(19) 98339-9763</a></p>
-            <p><a href="tel:19982656408">(19) 98265-6408</a></p>
+                <img class='logo' onClick={() => {
+                    console.log("Clickou")
+                }} src={logoImg} alt='Banda Dose Extra' height={'70%'}></img>
 
-          </div>
-        </section>
+                <headerright>
+                    <Link class='link' href="#contato">Contato</Link>
+                    <Link class='link' href="#contato">Sobre</Link>
+                </headerright>
 
-        <section id="insta">
-          <div>
-            <h3> Instagram </h3>
-          </div>
-        </section>
+            </header>
+            <body class='body'>
+                <img class='background' src={backImg} />
+                <section id="listaShow">
+                    <div>
+                        <h3>Shows Marcados </h3>
+                    </div>
+                </section>
 
-        <section id="listaShow">
 
-          <div>
-            <h3>Shows Marcados </h3>
-          </div>
-        </section>
-      </body>
-    </div>
-  );
+            </body>
+            <footer class='footer'>
+                <section id="contato">
+                    <div>
+
+                        <h3>Nos contate</h3>
+
+                        <p>Tel de contato</p>
+                        <p><a href="tel:19983399763">(19) 98339-9763</a></p>
+                        <p><a href="tel:19982656408">(19) 98265-6408</a></p>
+                        <p></p>
+                        <p>email</p>
+                        <p><a href="email:dose_extra@hotmail.com">dose_extra@hotmail.com</a></p>
+
+
+                    </div>
+                </section>
+
+                <section id="insta">
+                    <div>
+                        <h3> Instagram </h3>
+                        <p> <a href="www.instagram.com/doseextra.banda/"> Instagram dose extra</a></p>
+                    </div>
+
+                </section>
+            </footer>
+                
+        </div>
+    );
 }
 
 export default Home;
