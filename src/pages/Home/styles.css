@@ -11,9 +11,11 @@
 .home header {
     display: flex;
     align-items: center;
+    position: static;
     height: 25%;
     justify-content: space-between;
 }
+
 
 .home headerleft {
     display: flex;
@@ -35,7 +37,7 @@
     position: absolute;
     height: 20%;
     left: 50%;
-    top: 2%;
+    top: 5%;
     margin-left: -4%;
     border-radius: 100%;
     pointer-events: "all";
@@ -44,13 +46,13 @@
 }
 
 .logo:hover {
-    box-shadow: 0 0 50px 5px #bd7a68;
+    box-shadow: 0 0 20px #fff, 0 0 30px #5ae1e6, 0 0 40px #294578, 0 0 50px;
     z-index: 0;
 }
 
 .background {
     height: 120vh;
-    width: 219vh;
+    width: 98.8vw;
     margin-top: -25%;
     z-index: 1;
 }
@@ -67,18 +69,19 @@
     background: none;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 5%;
     font: 500 32px Ubuntu;
-    color: #ee5a31;
+    color: #2f5397;
     text-decoration: none;
     transition: color 0.5s;
-    transition: text-shadow 0.5s;
+    transition: text-shadow 0.7s;
     }
 
 
 
 .link:hover{
     color:#e7e7e7d5;
-    text-shadow: 0 0 20px #fff, 0 0 30px #bd7a68, 0 0 40px #bd7a68, 0 0 50px #bd7a68, 0 0 60px #bd7a68, 0 0 70px #bd7a68, 0 0 80px #bd7a68;
+    text-shadow: 0 0 20px #fff, 0 0 30px #5ae1e6, 0 0 40px #294578, 0 0 50px #294578, 0 0 60px #294578, 0 0 70px #294578;
 }
 
 .body {

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logoImg from '../../assets/Home/logo5.svg'
-import backImg from '../../assets/Home/backgroundHeaderWide.jpeg'
+import { Link, useHistory } from 'react-router-dom';
+import logoImg from '../../assets/Home/logo6.svg'
+import backImg from '../../assets/Home/backgroundHeaderWide4.jpeg'
+import 'react-sticky-header/styles.css';
+import StickyHeader from 'react-sticky-header';
 import { FiInstagram } from 'react-icons/fi'
 import './styles.css'
 
@@ -9,15 +11,13 @@ import './styles.css'
 
 function Home() {
 
-
-
     return (
         <div class='home'>
             
             <header>
                 <headerleft>
-                    <Link class='link' href="#contato">Mídia</Link>
-                    <Link class='link' href="#contato">Eventos</Link>
+                    <Link class='link' to="/Media">Mídia</Link>
+                    <Link class='link' to="/Eventos">Eventos</Link>
                 </headerleft>
 
                 <img class='logo' onClick={() => {
@@ -25,8 +25,8 @@ function Home() {
                 }} src={logoImg} alt='Banda Dose Extra' height={'70%'}></img>
 
                 <headerright>
-                    <Link class='link' href="#contato">Contato</Link>
-                    <Link class='link' href="#contato">Sobre</Link>
+                    <Link class='link' to="/Contato">Contato</Link>
+                    <Link class='link' to="/About">Sobre</Link>
                 </headerright>
 
             </header>
