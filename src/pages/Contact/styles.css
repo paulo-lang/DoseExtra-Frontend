@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+a {
+    font-size: 30px;
+}
+
+h2{
+    background: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    font: 500 32px Ubuntu;
+    color: #c76dfc;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: text-shadow 0.7s;
+}
