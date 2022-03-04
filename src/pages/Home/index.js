@@ -31,7 +31,7 @@ function Home() {
 
             </header>
             <body class='body'>
-                <img class='background' src={backImg} />
+                <iframe class='background' src={"https://gdurl.com/rmWHB"} />
                 <section id="listaShow">
                     <div>
                         <h3>Shows Marcados </h3>

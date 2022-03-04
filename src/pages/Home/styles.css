@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-
-
-
 .home {
     width: 100%;
     height: 100vh;
+    overflow:-moz-hidden-unscrollable;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .home header {
@@ -52,9 +54,8 @@
 
 .background {
     height: 120vh;
-    width: 98.8vw;
+    width: 100vw;
     margin-top: -25%;
-    z-index: 1;
 }
 
 .home header nav {
