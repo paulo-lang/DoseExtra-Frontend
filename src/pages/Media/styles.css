@@ -1,0 +1,29 @@
+.media-container {
+    display:flex;
+    background-color: rgb(16, 16, 48);
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.media-container h1 {
+    margin-top: 3%;
+}
+
+.media-container ul {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4%;
+    grid-gap: 80%;
+    list-style: none;
+}
+
+.media-container ul li {
+    background: #fff;
+    padding: 5%;
+    border-radius: 8px;
+    position: relative;
+}

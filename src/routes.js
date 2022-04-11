@@ -14,13 +14,23 @@ import './index.css'
 
 export default function Routes() {
     const [toggleMenu, setToggleMenu] = useState(false);
+    const [header, setHeader] = useState("header")
+
+    const changeHeaderColor = () => {
+        setHeader("header-blue")        
+    }
 
     return (
         <HashRouter>
+            <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+            </head>
             <div>
-                <div className="header">
+                <div className={header}>
                     <headerleft>
-                        <NavLink className={'link left'} to="/Media">Mídia</NavLink>
+                        <NavLink className={'link left'} onClick={changeHeaderColor} to="/Media">Mídia</NavLink>
                         <NavLink className={'link left'} to="/Events">Eventos</NavLink>
                     </headerleft>
                     <headercenter>
