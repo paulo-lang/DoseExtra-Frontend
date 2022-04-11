@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import axios from "axios"
 
-class Media extends Component {
+class PhotoPicker extends Component {
     state = {
         instaData: []
     }
@@ -9,9 +9,7 @@ class Media extends Component {
     async componentDidMount() {
         let data = []
         const url = "https://www.instagram.com/doseextra.banda/?hl=en"
-        const instaSource = await axios.get(url, {headers: {
-            'Access-Control-Allow-Origin' : '*'
-        }})
+        const instaSource = await axios.get(url)
 
         const instaObj = instaSource.data
             .match(
@@ -50,4 +48,4 @@ class Media extends Component {
 
 }
 
-export default Media
+export default PhotoPicker

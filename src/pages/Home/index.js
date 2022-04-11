@@ -7,38 +7,17 @@ import StickyHeader from 'react-sticky-header';
 import { FiInstagram } from 'react-icons/fi'
 import './styles.css'
 
-
-
 function Home() {
 
     return (
         <div class='home'>
             
-            <header>
-                <headerleft>
-                    <Link class='link' to="/Media">Mídia</Link>
-                    <Link class='link' to="/Eventos">Eventos</Link>
-                </headerleft>
-
-                <img class='logo' onClick={() => {
-                    console.log("Clickou")
-                }} src={logoImg} alt='Banda Dose Extra' height={'70%'}></img>
-
-                <headerright>
-                    <Link class='link' to="/Contato">Contato</Link>
-                    <Link class='link' to="/About">Sobre</Link>
-                </headerright>
-
-            </header>
             <body class='body'>
-                <iframe class='background' src={"https://gdurl.com/rmWHB"} />
                 <section id="listaShow">
                     <div>
                         <h3>Shows Marcados </h3>
                     </div>
                 </section>
-
-
             </body>
             <footer class='footer'>
                 <section id="contato">

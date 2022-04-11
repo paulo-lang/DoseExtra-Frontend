@@ -10,79 +10,10 @@
     display: none;
 }
 
-.home header {
-    display: flex;
-    align-items: center;
-    position: static;
-    height: 25%;
-    justify-content: space-between;
-}
-
-
-.home headerleft {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    justify-content: flex-start;
-    z-index: 0;
-}
-
-.home headerright {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    justify-content:flex-end;
-    z-index: 0;
-}
-
-.logo {
-    position: absolute;
-    height: 20%;
-    left: 50%;
-    top: 5%;
-    margin-left: -4%;
-    border-radius: 100%;
-    pointer-events: "all";
-    z-index: 0;
-    transition: box-shadow 0.5s;
-}
-
-.logo:hover {
-    box-shadow: 0 0 20px #fff, 0 0 30px #5ae1e6, 0 0 40px #294578, 0 0 50px;
-    z-index: 0;
-}
-
 .background {
     height: 120vh;
     width: 100vw;
     margin-top: -25%;
-}
-
-.home header nav {
-    display: flex;
-    flex: 1;
-    margin-left: 20%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.link {
-    background: none;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-    font: 500 32px Ubuntu;
-    color: #2f5397;
-    text-decoration: none;
-    transition: color 0.5s;
-    transition: text-shadow 0.7s;
-    }
-
-
-
-.link:hover{
-    color:#e7e7e7d5;
-    text-shadow: 0 0 20px #fff, 0 0 30px #5ae1e6, 0 0 40px #294578, 0 0 50px #294578, 0 0 60px #294578, 0 0 70px #294578;
 }
 
 .body {
