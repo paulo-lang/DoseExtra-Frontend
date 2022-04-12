@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import logoImg from '../../assets/Home/logo6.svg'
 import backImg from '../../assets/Home/backgroundHeaderWide4.jpeg'
@@ -8,6 +8,14 @@ import { FiInstagram } from 'react-icons/fi'
 import './styles.css'
 
 function Home() {
+
+    useEffect(() => {
+        var links = document.getElementsByClassName('link')
+        for(let i=0; i<links.length; i++){
+            links[i].style.color = "#2f5397"
+        }
+        document.getElementsByClassName('header')[0].style.backgroundColor = "#fff"
+    }, [])
 
     return (
         <div class='home'>

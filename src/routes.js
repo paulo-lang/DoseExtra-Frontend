@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HashRouter, Route, NavLink } from 'react-router-dom';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiMenu3Line, RiCloseLine, RiArrowDropRightLine, RiFacebookCircleFill, RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -14,28 +14,20 @@ import './index.css'
 
 export default function Routes() {
     const [toggleMenu, setToggleMenu] = useState(false);
-    const [header, setHeader] = useState("header")
-
-    const changeHeaderColor = () => {
-        setHeader("header-blue")        
-    }
 
     return (
         <HashRouter>
             <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height" />
             </head>
-            <div>
-                <div className={header}>
+            <div >
+                <div className={'header'}>
                     <headerleft>
-                        <NavLink className={'link left'} onClick={changeHeaderColor} to="/Media">Mídia</NavLink>
+                        <NavLink className={'link left'} to="/Media">Mídia</NavLink>
                         <NavLink className={'link left'} to="/Events">Eventos</NavLink>
                     </headerleft>
                     <headercenter>
-                        <NavLink className={'link'} to="/"><img class='logo' onClick={() => {
-                        }} src={logoImg} alt='Banda Dose Extra'></img></NavLink>
+                        <NavLink className={'link'} to="/"><img class='logo' src={logoImg} alt='Banda Dose Extra' /></NavLink>
 
                     </headercenter>
                     <headerright>
@@ -43,19 +35,22 @@ export default function Routes() {
                         <NavLink className={'link right'} to="/About">Sobre</NavLink>
                     </headerright>
                     <div className="navbar-menu">
-                        {toggleMenu
-                            ? <RiCloseLine color="#2f5397" size={'9vw'} onClick={() => setToggleMenu(false)} />
-                            : <RiMenu3Line color="#2f5397" size={'9vw'} onClick={() => setToggleMenu(true)} />}
+                        <RiMenu3Line className="open-menu-modal-btn" color="#2f5397" size={'5vh'} onClick={() => setToggleMenu(!toggleMenu)} />
                         {toggleMenu && (
-                            <div className="navbar-menu_container scale-up-center">
+                            <div className="navbar-menu_container">
+                                <RiCloseLine className="close-menu-modal-btn" color="#2f5397" size={'5vh'} onClick={() => setToggleMenu(!toggleMenu)} />
+
                                 <div className="navbar-menu_container-links">
-                                    <p className='menu'><NavLink className={'link'} to="/Media">Mídia</NavLink></p>
-                                    <div className='separator'></div>
-                                    <p className='menu'><NavLink className={'link'} to="/Events">Eventos</NavLink></p>
-                                    <div className='separator'></div>
-                                    <p className='menu'><NavLink className={'link'} to="/Contact">Contato</NavLink></p>
-                                    <div className='separator'></div>
-                                    <p className='menu'><NavLink className={'link'} to="/About">Sobre</NavLink></p>
+                                    <p className='menu'><NavLink className={'link'} to="/Media">Mídia</NavLink><RiArrowDropRightLine color="#2f5397" size={'5vh'} /></p>
+                                    <p className='menu'><NavLink className={'link'} to="/Events">Eventos</NavLink><RiArrowDropRightLine color="#2f5397" size={'5vh'} /></p>
+                                    <p className='menu'><NavLink className={'link'} to="/Contact">Contato</NavLink><RiArrowDropRightLine color="#2f5397" size={'5vh'} /></p>
+                                    <p className='menu'><NavLink className={'link'} to="/About">Sobre</NavLink><RiArrowDropRightLine color="#2f5397" size={'5vh'} /></p>
+                                </div>
+                                <p className='navbar-menu_container-social'>Conecte-se!</p>
+                                <div className='navbar-menu_container-social-medias'>
+                                    <RiFacebookCircleFill size={'4vh'} color="#5ae1e6" />
+                                    <RiInstagramFill size={'4vh'} color="#5ae1e6" />
+                                    <RiTwitterFill size={'4vh'} color="#5ae1e6" />
                                 </div>
                             </div>
                         )}

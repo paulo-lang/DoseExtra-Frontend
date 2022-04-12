@@ -24,8 +24,18 @@
     display: flex;
     align-items: center;
     height: 25%;
-    margin-top: 2vh;
+    padding-top: 2vh;
     justify-content: center;
+}
+
+
+.header-blue{
+    display: flex;
+    align-items: center;
+    height: 25%;
+    padding-top: 2vh;
+    justify-content: center;
+    background-color: #0b2047;
 }
 
 .header headerleft {
@@ -81,7 +91,6 @@
     .navbar-menu {
         display: flex;
         justify-content: flex-end;
-        margin-right: 10vw;
     }
 
     .link{
@@ -103,8 +112,13 @@
 }
 
 .menu {
+    
+    display: flex;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .link:hover{
@@ -114,29 +128,55 @@
 
 .navbar-menu_container {
     display: flex;
-    justify-content: space-around;
-    align-items: space-between;
+    justify-content:end;
     flex-direction: column;
-    text-align: center;
     background-image: linear-gradient(180deg, #5ae1e6, #395c9ecc);
-    padding: 1rem;
-    position: absolute;
-    right: 0;
-    top: 40px;
-    margin-top: 2rem;
-    min-width: 100px;
-    width: 20vw;
-    min-height: 150px;
-    height: 25vh;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    /* padding: 1rem; */
+    position: fixed;
+    top: 0vh;
+    /* margin-top: 2rem; */
+    /* min-width: 100px; */
+    min-width: 300px;
+    width: auto;
+    max-width: 375px;
+    /* min-height: 150px; */
+    height: 100%;
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 0px 5px rgba(0,0, 0,0.2); */
+}
+
+.close-menu-modal-btn {
+    position: fixed;
+    top: 4vh;
+    right: 3vw;
+}
+
+.open-menu-modal-btn {
+    margin-right: 5vw;
 }
 
 .navbar-menu_container-links{
     display: flex;
+    height: 72%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
     border: #294578;
     border-width: 20px;
+}
+
+.navbar-menu_container-social-medias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0b2047;
+    height: 10%;
+    width: 100%;
+}
+
+.navbar-menu_container-social{
+    margin-left: 3%;
+    margin-bottom: 3%;
+    color: #1445a0;
+    font: 500 2.2vh Ubuntu;
+
 }

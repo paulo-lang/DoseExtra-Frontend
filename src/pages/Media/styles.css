@@ -1,29 +1,57 @@
-.media-container {
+.feed-container {
     display:flex;
-    background-color: rgb(16, 16, 48);
+    background-color: #0b2047;
     height: 100vh;
     flex-direction: column;
     align-items: center;
     
 }
 
-
-.media-container h1 {
+.feed-container h1 {
     margin-top: 3%;
 }
 
-.media-container ul {
+.feed-container ul {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     margin-top: 4%;
-    grid-gap: 80%;
+    grid-row-gap: 5%;
+    grid-column-gap: 100%;
+    
     list-style: none;
 }
 
-.media-container ul li {
+.feed-container ul li {
     background: #fff;
-    padding: 5%;
+    padding: 24px;
     border-radius: 8px;
     position: relative;
+}
+
+.media-container-title{
+    font: 500 3vh Ubuntu;
+    color: #5ae1e6;
+    cursor: pointer;
+}
+
+#video{
+    color: #c5c5c5;
+}
+
+.media-container-header{
+    padding-top: 5vh;
+    align-items: center;
+    background-color: #0b2047;
+    padding-left: 12.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.separator{
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 3vh;
+    width: 0.13vw;
+    background-color: #5ae1e6;
 }
