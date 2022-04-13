@@ -14,13 +14,10 @@ const Media = () => {
             links[i].style.color = "#5ae1e6"
         }
         document.getElementsByClassName('header')[0].style.backgroundColor = "#0b2047"
+        console.log('photos')
 
         api.get('medias').then(response=>{
             setPhotos(response.data)
-        })
-
-        photos.map(photo=>{
-            
         })
     }, [])
 
@@ -39,11 +36,11 @@ const Media = () => {
 
             <div className="feed-container">
                 <ul>
-                    {/* {photos.map(photo => (
-                        <li key={photo.id}>
-                            <img src={photo.link}/>
+                    {photos.map(photo => (
+                        <li style={{height:540, width:380}} key={photo.id}>
+                            <img height={540} width={380} src={'https://drive.google.com/uc?export=view&id='+photo.link}/>
                         </li>
-                    ))} */}
+                    ))}
                 </ul>
             </div>
 

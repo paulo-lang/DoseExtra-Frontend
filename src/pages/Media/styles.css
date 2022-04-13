@@ -16,15 +16,17 @@
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     margin-top: 4%;
-    grid-row-gap: 5%;
-    grid-column-gap: 100%;
-    
+    grid-row-gap: 0%;
+    grid-column-gap: 0%;
     list-style: none;
+    background-color: #c5c5c5;
+    width: 75%;
+    border-radius: 8px;
 }
 
 .feed-container ul li {
-    background: #fff;
-    padding: 24px;
+    padding: 10px;
+    background-color: #5ae1e6;
     border-radius: 8px;
     position: relative;
 }
