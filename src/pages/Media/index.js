@@ -14,7 +14,6 @@ const Media = () => {
             links[i].style.color = "#5ae1e6"
         }
         document.getElementsByClassName('header')[0].style.backgroundColor = "#0b2047"
-        console.log('photos')
 
         api.get('medias').then(response=>{
             setPhotos(response.data)
@@ -23,7 +22,10 @@ const Media = () => {
 
     function changeColor(e, name) {
         e.target.style.color = "#5ae1e6"
-        document.getElementById(name).style.color = "#c5c5c5"
+        e.target.style.textDecoration = "underline"
+        let deactivated = document.getElementById(name)
+        deactivated.style.color = "#c5c5c5"
+        deactivated.style.textDecoration = "none"
     }
 
     return (
@@ -37,8 +39,8 @@ const Media = () => {
             <div className="feed-container">
                 <ul>
                     {photos.map(photo => (
-                        <li style={{height:540, width:380}} key={photo.id}>
-                            <img height={540} width={380} src={'https://drive.google.com/uc?export=view&id='+photo.link}/>
+                        <li className="item-container" key={photo.id}>
+                            <img height={240} width={400} src={'https://drive.google.com/uc?export=view&id='+photo.link}/>
                         </li>
                     ))}
                 </ul>
