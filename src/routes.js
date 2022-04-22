@@ -28,7 +28,6 @@ export default function Routes() {
                     </headerleft>
                     <headercenter>
                         <NavLink className={'link'} to="/"><img class='logo' src={logoImg} alt='Banda Dose Extra' /></NavLink>
-
                     </headercenter>
                     <headerright>
                         <NavLink className={'link right'} to="/Contact">Contato</NavLink>

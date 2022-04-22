@@ -4,12 +4,8 @@
 }
 
 .logo {
-    min-height: 8vh;
-    height: auto;
-    max-height: 20vh;
-    min-width: 8vw;
-    width: auto;
-    max-width: 20vw;
+    height: 150px;
+    width: 150px;
     border-radius: 100%;
     pointer-events: "all";
     transition: box-shadow 0.5s;
