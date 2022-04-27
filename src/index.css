@@ -19,8 +19,8 @@
 .header{
     display: flex;
     align-items: center;
-    height: 25%;
-    padding-top: 2vh;
+    height: 25vh;
+    padding-top: 0.2vh;
     justify-content: center;
 }
 

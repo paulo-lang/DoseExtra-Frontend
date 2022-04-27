@@ -1,3 +1,115 @@
-a {
-    font-size: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.title {
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font: 500 4vh Ubuntu;
+}
+
+#sec-1 {
+    min-height: 74vh
+}
+
+#sec-2 {
+    min-height: 100vh;
+    background-color: #0b2047;
+}
+
+.container {
+    padding-top: 1vh;
+}
+
+.members-container {
+    padding-top: 60px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.member-container {
+    background-color: #fff;
+    max-width: 25vw;
+    min-width: 350px;
+    border-radius: 20px;
+    max-height: 48vh;
+}
+
+.member-sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+.member-name {
+    font: 500 2vh Ubuntu;
+}
+
+.member-desc {
+    font: 300 2vh Ubuntu;
+}
+
+.member-image {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 20px;
+    width: 20px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+.title-2{
+    font: 300 3vh Ubuntu;
+    color: #fff;
+    font-weight: bold;
+
 }
